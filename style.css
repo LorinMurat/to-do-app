@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+background-image: url(./images/gradientImage.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.container{
+    width: 100%;
+    min-height:100vh;
+}
+
+.app{
+    width: 100%;
+    max-width: 540px;
+    border-radius: 10px;
+    margin: 50px auto 20px;
+    padding: 40px 60px 70px;
+    background: #fff;   
+}
+
+.area{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #92c7f8;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 78px;
+    border-radius: 40px;
+    
+}
+
+button:hover{
+    background-color: rgb(72, 101, 126);
+    transition: all 0.5s ease;
+        
+}
+
+ul li{
+    list-style-type: none;
+    font-size: 23px;
+    padding: 12px 8px 12px 45px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+
+}
+
+span{
+    right: 0px;
+    top: 5px;
+    position: absolute;
+    font-size: 22px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    bottom: 3px;
+}
+
+span:hover{
+    background-color: #b6b2b2;
+    transition: all 0.5s ease;
+
+}
